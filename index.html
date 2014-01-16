@@ -1,0 +1,88 @@
+<html>
+  <head>
+	<script src="racunanje.js">
+	</script>
+    <style>
+	  input
+	  {
+	    height:100px;
+		width:100px;
+		font-size: 30px;
+	  }
+	  #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #zero, #dot
+	  {
+	    background-color:lime;
+		border: none;
+	  }
+	  #divide, #clear, #multiply, #plus, #minus, #equal, #calculate
+	  {
+	    background-color:yellow;
+		border: none;
+	  }
+	  #tb
+	  {
+	    width:310px;
+		border: none;
+		background-color: white;
+	  }
+	  table
+	  {
+	    background-color:blue;
+	  }
+	</style>
+  </head>
+  <body>
+    <div align="center">
+	  <table>
+	    <tr>
+		  <td colspan ="3"><input type="text" id="tb" name="tb" value="0" disabled>
+		  </td>
+		  <td><input type="button" id="clear" name="clear" value="C" OnClick="Clear()">
+		  </td>
+		</tr>
+	    <tr>
+		  <td><input type="button" id="one" name="one" value="1" Onclick="numAdd(this.id, this.value)" >
+		  </td>
+		  <td><input type="button" id="two" name="two" value="2" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="three" name="three" value="3" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="plus" name="plus" value="+" OnClick="plus(this.id)">
+		  </td>
+		</tr>
+		<tr>
+		  <td><input type="button" id="four" name="four" value="4" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="five" name="five" value="5" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="six" name="six" value="6" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="minus" name="minus" value="-" OnClick="minus(this.id)">
+		  </td>
+		</tr>
+		<tr>
+		  <td><input type="button" id="seven" name="seven" value="7" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="eight" name="eight" value="8" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="nine" name="nine" value="9" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="multiply" name="multiply" value="*" OnClick="multiply(this.id)">
+		  
+		  </td>
+		</tr>
+		<tr>
+		  <td><input type="button" id="dot" name="dot" value="." OnClick="dot(this.value)">
+		  </td>
+		  <td><input type="button" id="zero" name="zero" value="0" OnClick="numAdd(this.id, this.value)">
+		  </td>
+		  <td><input type="button" id="divide" name="divide" value="/" OnClick="divide(this.id)">
+		  </td>
+		   <td><input type="button" id="calculate" name="calculate" value="=" OnClick="calculate()">
+		  </td>
+		</tr>
+	  </table>
+	</div>
+  </body>
+  
+</html>
